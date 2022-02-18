@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://lanceharper.xyz"
 # [en, zh-cn, fr, ...] 设置默认的语言
 defaultContentLanguage = "zh-cn"
 # 网站语言, 仅在这里 CN 大写
@@ -11,9 +11,13 @@ title = "大熊今天学点啥"
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "LoveIt"
 
-[params]
-  # LoveIt 主题版本
-  version = "0.2.X"
+enableGitInfo = true
+
+pygmentsUseClasses = true
+pygmentCodeFences = true
+pygmentscodefencesguesssyntax = true
+
+
 
 [menu]
   [[menu.main]]
@@ -44,6 +48,17 @@ theme = "LoveIt"
     title = ""
     weight = 3
 
+  [[menu.main]]
+    pre = "<i class='fab fa-github fa-fw'></i>"
+    name = ""
+    weight = 50
+    identifier = "github"
+    url = "https://github.com/bearbaba/"
+
+[params]
+  # LoveIt 主题版本
+  version = "0.2.X"
+
  # 页面底部信息配置
   [params.footer]
     enable = true
@@ -69,9 +84,9 @@ theme = "LoveIt"
     [params.home.profile]
       enable = true
       # Gravatar 邮箱，用于优先在主页显示的头像
-      gravatarEmail = "lanceharper2022@gmail.com"
+      # gravatarEmail = "lanceharper2022@gmail.com"
       # 主页显示头像的 URL
-      avatarURL = "/images/avatar.png"
+      avatarURL = "https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202181657739.png"
       # LoveIt 更改 | 0.2.7 主页显示的网站标题 (支持 HTML 格式)
       title = "大熊今天学点啥"
       # 主页显示的网站副标题
@@ -91,6 +106,9 @@ theme = "LoveIt"
       # 当你没有在文章前置参数中设置 "hiddenFromHomePage" 时的默认行为
       defaultHiddenFromHomePage = false
 
+ [params.social]
+    GitHub = "bearbaba"
+    RSS = true
 
 # Hugo 解析文档的配置
 [markup]
@@ -98,3 +116,15 @@ theme = "LoveIt"
   [markup.highlight]
     # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+
+   [params.page.comment]
+      enable = true
+      # Disqus 评论系统设置
+      # Gitalk 评论系统设置
+      [params.page.comment.gitalk]
+        # LoveIt 新增 | 0.1.1
+        enable = true
+        owner = "bearbaba"
+        repo = "comment"
+        clientId = "7362fb324bab266414af"
+        clientSecret = "bd22c8c7795761311fe0288efb21b7380c64da74"

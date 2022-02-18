@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+
+<div id="gitalk-container"></div>     
+<script type="text/javascript">
+   var gitalk = new Gitalk({
+   // gitalk的主要参数
+      clientID: `7362fb324bab266414af`,   //上面获取到的值
+      clientSecret: `bd22c8c7795761311fe0288efb21b7380c64da74`,//上面获取到的值
+      repo: `comment`,  //您刚才建立仓库的名字
+      owner: 'bearbaba',   //你的GitHub用户名字
+      admin: ['bearbaba'],  //你的GitHub用户的名字
+      id: 'window.location.pathname', //id不能重复，如果重复就会把其他页面的评论引进来
+      });
+      gitalk.render('gitalk-container');
+</script> 
