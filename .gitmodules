@@ -1,3 +1,9 @@
 [submodule "themes/hugo-theme-texify"]
 	path = themes/hugo-theme-texify
 	url = https://github.com/queensferryme/hugo-theme-texify.git
+[submodule "themes/LoveIt"]
+	path = themes/LoveIt
+	url = https://github.com/dillonzq/LoveIt.git
+[submodule "themes/simpleness"]
+	path = themes/simpleness
+	url = https://github.com/RainerChiang/simpleness.git
