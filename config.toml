@@ -58,6 +58,7 @@ pygmentscodefencesguesssyntax = true
 [params]
   # LoveIt 主题版本
   version = "0.2.X"
+  enableGitalk = true # 开启Gitalk
 
  # 页面底部信息配置
   [params.footer]
@@ -77,7 +78,7 @@ pygmentscodefencesguesssyntax = true
     # 许可协议信息 (支持 HTML 格式)
     license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
- [params.home]
+  [params.home]
     # LoveIt 新增 | 0.2.0 RSS 文章数目
     rss = 10
     # 主页个人信息
@@ -106,9 +107,53 @@ pygmentscodefencesguesssyntax = true
       # 当你没有在文章前置参数中设置 "hiddenFromHomePage" 时的默认行为
       defaultHiddenFromHomePage = false
 
- [params.social]
+  [params.social]
     GitHub = "bearbaba"
     RSS = true
+  [params.page]
+    [params.page.code]
+      # 是否显示代码块的复制按钮
+      copy = true
+      # 默认展开显示的代码行数
+      maxShownLines = 10
+    # LoveIt 更改 | 0.2.0 KaTeX 数学公式
+    [params.page.math]
+      enable = true
+      # 默认块定界符是 $$ ... $$ 和 \\[ ... \\]
+      blockLeftDelimiter = ""
+      blockRightDelimiter = ""
+      # 默认行内定界符是 $ ... $ 和 \\( ... \\)
+      inlineLeftDelimiter = ""
+      inlineRightDelimiter = ""
+      # KaTeX 插件 copy_tex
+      copyTex = true
+      # KaTeX 插件 mhchem
+      mhchem = true
+    # LoveIt 新增 | 0.2.0 Mapbox GL JS 配置
+    [params.page.mapbox]
+      # Mapbox GL JS 的 access token
+      accessToken = ""
+      # 浅色主题的地图样式
+      lightStyle = "mapbox://styles/mapbox/light-v9"
+      # 深色主题的地图样式
+      darkStyle = "mapbox://styles/mapbox/dark-v9"
+      # 是否添加 NavigationControl
+      navigation = true
+      # 是否添加 GeolocateControl
+      geolocate = true
+      # 是否添加 ScaleControl
+      scale = true
+      # 是否添加 FullscreenControl
+      fullscreen = true
+    [params.page.comment]
+      enable = true
+      [params.page.comment.gitalk]
+        # LoveIt 新增 | 0.1.1
+        enable = true
+        owner = "bearbaba"
+        repo = "comment"
+        clientId = "7362fb324bab266414af"
+        clientSecret = "bd22c8c7795761311fe0288efb21b7380c64da74"
 
 # Hugo 解析文档的配置
 [markup]
@@ -117,14 +162,3 @@ pygmentscodefencesguesssyntax = true
     # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
 
-   [params.page.comment]
-      enable = true
-      # Disqus 评论系统设置
-      # Gitalk 评论系统设置
-      [params.page.comment.gitalk]
-        # LoveIt 新增 | 0.1.1
-        enable = true
-        owner = "bearbaba"
-        repo = "comment"
-        clientId = "7362fb324bab266414af"
-        clientSecret = "bd22c8c7795761311fe0288efb21b7380c64da74"
