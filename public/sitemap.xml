@@ -2,8 +2,8 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://example.org/posts/hello-world/</loc><lastmod>2022-02-16T23:14:50&#43;08:00</lastmod></url><url>
-            <loc>http://example.org/posts/</loc><lastmod>2022-02-16T23:14:50&#43;08:00</lastmod></url><url>
-            <loc>http://example.org/</loc><lastmod>2022-02-16T23:14:50&#43;08:00</lastmod></url><url>
-            <loc>http://example.org/categories/</loc></url><url>
-            <loc>http://example.org/tags/</loc></url></urlset>
+            <loc>http://lanceharper.xyz/posts/hello-world/</loc><lastmod>2022-02-18T18:17:28&#43;08:00</lastmod></url><url>
+            <loc>http://lanceharper.xyz/posts/</loc><lastmod>2022-02-18T18:17:28&#43;08:00</lastmod></url><url>
+            <loc>http://lanceharper.xyz/</loc><lastmod>2022-02-18T18:17:28&#43;08:00</lastmod></url><url>
+            <loc>http://lanceharper.xyz/categories/</loc></url><url>
+            <loc>http://lanceharper.xyz/tags/</loc></url></urlset>
