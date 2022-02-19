@@ -2,8 +2,8 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://lanceharper.xyz/posts/hello-world/</loc><lastmod>2022-02-18T18:17:28&#43;08:00</lastmod></url><url>
-            <loc>http://lanceharper.xyz/posts/</loc><lastmod>2022-02-18T18:17:28&#43;08:00</lastmod></url><url>
-            <loc>http://lanceharper.xyz/</loc><lastmod>2022-02-18T18:17:28&#43;08:00</lastmod></url><url>
-            <loc>http://lanceharper.xyz/categories/</loc></url><url>
-            <loc>http://lanceharper.xyz/tags/</loc></url></urlset>
+            <loc>https://github.com/bearbaba/blog/posts/hello-world/</loc><lastmod>2022-02-18T18:17:28&#43;08:00</lastmod></url><url>
+            <loc>https://github.com/bearbaba/blog/posts/</loc><lastmod>2022-02-18T18:17:28&#43;08:00</lastmod></url><url>
+            <loc>https://github.com/bearbaba/blog/</loc><lastmod>2022-02-18T18:17:28&#43;08:00</lastmod></url><url>
+            <loc>https://github.com/bearbaba/blog/categories/</loc></url><url>
+            <loc>https://github.com/bearbaba/blog/tags/</loc></url></urlset>

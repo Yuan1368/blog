@@ -1,16 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>大熊今天学点啥</title>
-        <link>http://lanceharper.xyz/</link>
+        <link>https://github.com/bearbaba/blog/</link>
         <description>大熊今天学点啥</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 16 Feb 2022 23:14:50 &#43;0800</lastBuildDate>
-            <atom:link href="http://lanceharper.xyz/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="https://github.com/bearbaba/blog/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Hello World</title>
-    <link>http://lanceharper.xyz/posts/hello-world/</link>
+    <link>https://github.com/bearbaba/blog/posts/hello-world/</link>
     <pubDate>Wed, 16 Feb 2022 23:14:50 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>http://lanceharper.xyz/posts/hello-world/</guid>
+    <guid>https://github.com/bearbaba/blog/posts/hello-world/</guid>
     <description><![CDATA[我的第一篇博客 Hello World test test1 test2 test3 test4 test5 test6 test7 test8 test9 test10 test12 test13 test14 test15 test16]]></description>
 </item></channel>
 </rss>

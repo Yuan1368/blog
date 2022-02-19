@@ -60,7 +60,7 @@ pygmentscodefencesguesssyntax = true
   version = "0.2.X"
   enableGitalk = true # 开启Gitalk
 
- # 页面底部信息配置
+  # 页面底部信息配置
   [params.footer]
     enable = true
     # LoveIt 新增 | 0.2.0 自定义内容 (支持 HTML 格式)
@@ -151,9 +151,9 @@ pygmentscodefencesguesssyntax = true
         # LoveIt 新增 | 0.1.1
         enable = true
         owner = "bearbaba"
-        repo = "comment"
-        clientId = "7362fb324bab266414af"
-        clientSecret = "bd22c8c7795761311fe0288efb21b7380c64da74"
+        repo = "blog"
+        clientId = "3858e86bb92b33a8cece"
+        clientSecret = "9eecb09b1875cfc9daa2f5211c5c9c3efe627074"
 
 # Hugo 解析文档的配置
 [markup]
