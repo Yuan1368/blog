@@ -162,3 +162,19 @@ pygmentscodefencesguesssyntax = true
     # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
 
+# 作者配置
+[author]
+  name = "Lance Harper"
+  email = "lanceharper2022@gmail.com"
+  link = "http://lanceharper.xyz"
+
+# 网站地图配置
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[taxonomies]
+  tag = "tags"
+  series = "series"
+  category = "categories"
