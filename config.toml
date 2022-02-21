@@ -166,7 +166,26 @@ pygmentscodefencesguesssyntax = true
         repo = "blog"
         clientId = "3858e86bb92b33a8cece"
         clientSecret = "f47a0fedec73ac1c2aaaf6e45a4a9f5f19dccf54"
-
+      [params.page.comment.valine]
+        enable = false
+        appId = "zbcM4sneNb2xHBHPwXbqQFCY-gzGzoHsz"
+        appKey = "VS4jEGPCisgL7yccT2EDHTkD"
+        placeholder = ""
+        avatar = "mp"
+        meta= "fj7v5VRGRWeO8r2UxavQEByQ"
+        pageSize = 10
+        lang = "zh-cn"
+        visitor = true
+        recordIP = true
+        highlight = true
+        enableQQ = false
+        serverURLs = ""
+        # LoveIt 新增 | 0.2.6 emoji 数据文件名称, 默认是 "google.yml"
+        # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
+        # 位于 "themes/LoveIt/assets/data/emoji/" 目录
+        # 可以在你的项目下相同路径存放你自己的数据文件:
+        # "assets/data/emoji/"
+        emoji = ""
 # Hugo 解析文档的配置
 [markup]
   # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
