@@ -161,13 +161,13 @@ pygmentscodefencesguesssyntax = true
       enable = true
       [params.page.comment.gitalk]
         # LoveIt 新增 | 0.1.1
-        enable = false
+        enable = true
         owner = "bearbaba"
         repo = "blog"
         clientId = "3858e86bb92b33a8cece"
         clientSecret = "f47a0fedec73ac1c2aaaf6e45a4a9f5f19dccf54"
       [params.page.comment.valine]
-        enable = true
+        enable = false
         appId = "zbcM4sneNb2xHBHPwXbqQFCY-gzGzoHsz"
         appKey = "VS4jEGPCisgL7yccT2EDHTkD"
         placeholder = ""
