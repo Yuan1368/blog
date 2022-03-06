@@ -2,8 +2,12 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://github.com/bearbaba/blog/posts/hello-world/</loc><lastmod>2022-02-18T18:17:28&#43;08:00</lastmod></url><url>
-            <loc>https://github.com/bearbaba/blog/posts/</loc><lastmod>2022-02-18T18:17:28&#43;08:00</lastmod></url><url>
-            <loc>https://github.com/bearbaba/blog/</loc><lastmod>2022-02-18T18:17:28&#43;08:00</lastmod></url><url>
-            <loc>https://github.com/bearbaba/blog/categories/</loc></url><url>
-            <loc>https://github.com/bearbaba/blog/tags/</loc></url></urlset>
+            <loc>http://lanceharper.xyz/categories/</loc><lastmod>2022-02-19T13:04:44&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>http://lanceharper.xyz/posts/</loc><lastmod>2022-02-19T13:04:44&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>http://lanceharper.xyz/tags/</loc><lastmod>2022-02-19T13:04:44&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>http://lanceharper.xyz/tags/%E5%8D%9A%E5%AE%A2/</loc><lastmod>2022-02-19T13:04:44&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>http://lanceharper.xyz/</loc><lastmod>2022-02-19T13:04:44&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>http://lanceharper.xyz/posts/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</loc><lastmod>2022-02-19T13:04:44&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>http://lanceharper.xyz/tags/%E5%B7%A5%E5%85%B7/</loc><lastmod>2022-02-19T13:04:44&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>http://lanceharper.xyz/categories/%E5%B7%A5%E5%85%B7%E6%80%8E%E4%B9%88%E7%94%A8/</loc><lastmod>2022-02-19T13:04:44&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url>
+            <loc>http://lanceharper.xyz/series/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>

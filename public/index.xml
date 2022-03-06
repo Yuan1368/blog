@@ -1,16 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>大熊今天学点啥</title>
-        <link>https://github.com/bearbaba/blog/</link>
-        <description>大熊今天学点啥</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 16 Feb 2022 23:14:50 &#43;0800</lastBuildDate>
-            <atom:link href="https://github.com/bearbaba/blog/index.xml" rel="self" type="application/rss+xml" />
+        <link>http://lanceharper.xyz/</link>
+        <description> 大熊今天学点啥 </description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lanceharper2022@gmail.com (Lance Harper)</managingEditor>
+            <webMaster>lanceharper2022@gmail.com (Lance Harper)</webMaster><lastBuildDate>Sat, 19 Feb 2022 13:04:44 &#43;0800</lastBuildDate>
+            <atom:link href="http://lanceharper.xyz/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Hello World</title>
-    <link>https://github.com/bearbaba/blog/posts/hello-world/</link>
-    <pubDate>Wed, 16 Feb 2022 23:14:50 &#43;0800</pubDate>
+    <title>如何快速搭建一个博客</title>
+    <link>http://lanceharper.xyz/posts/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</link>
+    <pubDate>Sat, 19 Feb 2022 13:04:44 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://github.com/bearbaba/blog/posts/hello-world/</guid>
-    <description><![CDATA[我的第一篇博客 Hello World test test1 test2 test3 test4 test5 test6 test7 test8 test9 test10 test12 test13 test14 test15 test16]]></description>
+    <guid>http://lanceharper.xyz/posts/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</guid>
+    <description><![CDATA[如何快速搭建一个博客 注意：如果读者想要通过本篇博客学会快速搭建博客，可能需要有使用服务器的基础，以及懂一点后端，并且使用过 git 。 实际上这已经不]]></description>
 </item></channel>
 </rss>

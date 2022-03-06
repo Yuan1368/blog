@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>如何快速搭建一个博客 - 大熊今天学点啥</title><meta name="Description" content=" 大熊今天学点啥 "><meta property="og:title" content="如何快速搭建一个博客" />
+<meta property="og:description" content="如何快速搭建一个博客 注意：如果读者想要通过本篇博客学会快速搭建博客，可能需要有使用服务器的基础，以及懂一点后端，并且使用过 git 。 实际上这已经不" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://lanceharper.xyz/posts/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-02-19T13:04:44+08:00" />
+<meta property="article:modified_time" content="2022-02-19T13:04:44+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="如何快速搭建一个博客"/>
+<meta name="twitter:description" content="如何快速搭建一个博客 注意：如果读者想要通过本篇博客学会快速搭建博客，可能需要有使用服务器的基础，以及懂一点后端，并且使用过 git 。 实际上这已经不"/>
+<meta name="application-name" content="大熊今天学点啥">
+<meta name="apple-mobile-web-app-title" content="大熊今天学点啥"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://lanceharper.xyz/posts/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "如何快速搭建一个博客",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/lanceharper.xyz\/posts\/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2\/"
+        },"genre": "posts","keywords": "博客, 工具","wordcount":  3158 ,
+        "url": "http:\/\/lanceharper.xyz\/posts\/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2\/","datePublished": "2022-02-19T13:04:44+08:00","dateModified": "2022-02-19T13:04:44+08:00","publisher": {
+            "@type": "Organization",
+            "name": "Lance Harper"},"author": {
+                "@type": "Person",
+                "name": "Lance Harper"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="大熊今天学点啥">大熊今天学点啥</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="https://github.com/bearbaba/" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="大熊今天学点啥">大熊今天学点啥</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="https://github.com/bearbaba/" title="" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">如何快速搭建一个博客</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="http://lanceharper.xyz" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Lance Harper</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E5%B7%A5%E5%85%B7%E6%80%8E%E4%B9%88%E7%94%A8/"><i class="far fa-folder fa-fw"></i>工具怎么用</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-02-19">2022-02-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 3158 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 7 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#需求">需求</a></li>
+    <li><a href="#服务器">服务器</a></li>
+    <li><a href="#hugo-是个啥">Hugo 是个啥</a></li>
+    <li><a href="#服务器的配置">服务器的配置</a></li>
+    <li><a href="#服务器配置">服务器配置</a></li>
+    <li><a href="#github-配置-webhook">GitHub 配置 webhook</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="如何快速搭建一个博客">如何快速搭建一个博客</h1>
+<blockquote>
+<p>注意：如果读者想要通过本篇博客学会快速搭建博客，可能需要有使用服务器的基础，以及懂一点后端，并且使用过 git 。</p>
+</blockquote>
+<p>实际上这已经不是我第一次写博客了，之前有使用微信公众号、CSDN 等写过博客，由于微信公众号原生并不支持 markdown 语法，这使得我不得不依赖于第三方工具来进行公众号的排版，而 CSDN 在内容上又实在是太“嘈杂”了，里面充斥着大量直接复制粘贴的文章。（这里挖个坑，有时间介绍下什么是 markdown 语法，或者介绍下公众号排版的工具。）</p>
+<p>另外由于我并不喜欢繁琐的登录、发布文章等操作，只希望能够快速发布文章，把重心放在文章的内容上，所以我还是用服务器自己搭一个简单的博客平台。</p>
+<h2 id="需求">需求</h2>
+<p>个人需求其实很简单，只需要能够在写完文章后，自动部署到服务器上就可以了。</p>
+<p>在技术和工具上最后选用了 hugo + github webhook ，只要我使用<code>git push</code>命令把新内容上传到 Github 上后，GitHub 就能使用 Webhook 向服务器发送一个网络请求，然后服务器能够执行预先设好的命令，将新的内容<code>git clone</code> 下来。</p>
+<h2 id="服务器">服务器</h2>
+<p>首先我们需要一台云服务器，最好再弄一个域名，由于国内的域名需要进行备案，为了避免备案审核上的麻烦，干脆买了新加坡的云服务器，也就是常说的 VPS ，购买的平台是 vultr ，它的优惠力度也比较大，试用的话能够赠送 100 美刀的优惠，服务器操作系统选用的是 centos7 ，由于服务器在新加坡，所以远程连接延迟很高。域名则是在 namecheap 平台上购买的，也通过这个平台进行域名解析。由于购买是对国外的交易。</p>
+<p>如果读者也想模仿购买的话，可能还需要注册个 PayPal ，不过我在购买的过程中发现有些平台尽管支持 PayPal 但是依然会存在购买失败的情况，也许可能是国内交易上的一个限制吧，有空我会介绍下购买国内云服务器以及域名的情况，这里就不提了。</p>
+<h2 id="hugo-是个啥">Hugo 是个啥</h2>
+<p><a href="https://gohugo.io/" target="_blank" rel="noopener noreffer">Hugo</a> 是一个非常优秀的静态网站生成器，与它类似的还有 VuePress、Hexo、gitbook 等，我们这里使用它来做我们的博客网站页面。</p>
+<p>我们直接在<a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreffer">Hugo releases</a>找到需要安装的版本，另外除了需要在本地 PC 端进行安装外，也需要在服务器上进行安装，相关教程在网络上也有许多，这里就不赘述安装过程了。</p>
+<p>安装完 Hugo 后能够使用如下命令建站，</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo new site blog
+</code></pre></div><p>它会生成一个<code>blog</code>文件夹，这个文件内有相关配置文件以及内容，这里的<code>blog</code>也将作为我们站点的名称。</p>
+<p>使用如下命令会在本地预览站点页面：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo server
+</code></pre></div><p>我的站点的主题是<a href="https://hugoloveit.com/zh-cn/theme-documentation-basics/" target="_blank" rel="noopener noreffer">LoveIt</a>，我们可以通过如下命令进行主题安装：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git clone https://github.com/dillonzq/LoveIt.git themes/LoveIt
+</code></pre></div><p>不过由于我们需要把博客的内容放到 Github 上，这里建议使用如下命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git init
+git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
+</code></pre></div><p><code>git init</code>使用<code>git</code>初始化了这个项目文件夹，我们需要在 GIthub 上创建一个新的库（repo），然后把本项目内容上传到 GitHub 上，这个上传文件到 GitHub 的过程可以在网络上找到相关教程，这里不进行赘述。</p>
+<p>LoveIt 主题允许我们使用进行配置，我们这里的配置文件在 blog 文件夹下的 <code>config.toml</code>内：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://example.org/&#34;</span>
+<span class="c"># [en, zh-cn, fr, ...] 设置默认的语言</span>
+<span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;zh-cn&#34;</span>
+<span class="c"># 网站语言, 仅在这里 CN 大写</span>
+<span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;zh-CN&#34;</span>
+<span class="c"># 是否包括中日韩文字</span>
+<span class="nx">hasCJKLanguage</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="c"># 网站标题</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;我的全新 Hugo 网站&#34;</span>
+
+<span class="c"># 更改使用 Hugo 构建网站时使用的默认主题</span>
+<span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;LoveIt&#34;</span>
+
+<span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+  <span class="c"># LoveIt 主题版本</span>
+  <span class="nx">version</span> <span class="p">=</span> <span class="s2">&#34;0.2.X&#34;</span>
+
+<span class="p">[</span><span class="nx">menu</span><span class="p">]</span>
+  <span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+    <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;posts&#34;</span>
+    <span class="c"># 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标</span>
+    <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="c"># 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标</span>
+    <span class="nx">post</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;文章&#34;</span>
+    <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/posts/&#34;</span>
+    <span class="c"># 当你将鼠标悬停在此菜单链接上时, 将显示的标题</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+  <span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+    <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;tags&#34;</span>
+    <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">post</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;标签&#34;</span>
+    <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/tags/&#34;</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+  <span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+    <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;categories&#34;</span>
+    <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">post</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;分类&#34;</span>
+    <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/categories/&#34;</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">3</span>
+
+<span class="c"># Hugo 解析文档的配置</span>
+<span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
+  <span class="c"># 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)</span>
+  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">highlight</span><span class="p">]</span>
+    <span class="c"># false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)</span>
+    <span class="nx">noClasses</span> <span class="p">=</span> <span class="kc">false</span>
+</code></pre></div><h2 id="服务器的配置">服务器的配置</h2>
+<p>我们在购买服务器后，在本地远程连接到服务器上，然后需要安装 <a href="https://nginx.org/en/download.html" target="_blank" rel="noopener noreffer">nginx</a>作为 web 服务器。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">yum install nginx
+</code></pre></div><p>如果服务器没有自带 yum ，可以在网络上查找下相关教程。</p>
+<p>然后安装下 hugo：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">wget <span class="s2">&#34;https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_0.74.3_Linux-64bit.tar.gz&#34;</span>
+<span class="c1"># 解压</span>
+tar -zxvf hugo_0.74.3_Linux-64bit.tar.gz -C .
+<span class="c1"># 把 hugo 作为系统环境</span>
+mv hugo /usr/local/bin/
+</code></pre></div><p>与在 PC 端上的操作类似，我们也需要使用 Hugo 新建一个站点，这里我们选用<code>/var/www/</code>作为站点目录。</p>
+<p>由于我的服务器在买来时，并没有<code>www</code>这个目录，所以还需要新建该目录。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /var
+<span class="c1"># 新建 www 目录</span>
+mkdir www 
+<span class="c1"># 新建 blog 站点</span>
+hugo new site hugo
+<span class="nb">cd</span> blog
+</code></pre></div><p>有了 hugo 后我们还需要将上传到 Github 内的文件 clone 下来，覆盖 blog 下原有的文件。</p>
+<p>首先需要安装一个<code>git</code>，依然使用<code>yum</code>进行安装：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">yum install git
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">git clone git@github.com:bearbaba/blog.git .
+</code></pre></div><p>这里使用的是 ssh 方式进行<code>clone</code>，ssh 需要进行配置，可以在网络上查找到使用 ssh 进行<code>git clone</code>的方法。注意<code>.</code>表示该目录，由于该目录已经有文件内容，这里需要删除<code>blog</code>文件夹下的所有文件后再去<code>git clone</code>，但是不要删除<code>blog</code>文件夹，因为这个文件夹使用<code>hugo</code>生成的，如果删除了，依然需要使用<code>hugo</code>新建<code>site</code>。</p>
+<p>然后使用<code>hugo -D</code>命令就能生成静态页面的内容在<code>blog/public</code>目录下。</p>
+<p>这里还需要配置一下<code>nginx</code>，让我们能够通过访问域名的方式看到静态页面的内容。</p>
+<p><code>nginx</code>的配置文件是<code>/etc/nginx/nginx.conf</code>，修改的内容是将<code>server</code>中的<code>root</code>后添加静态页面站点的目录。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">server <span class="o">{</span>
+	.....
+    server_name  _<span class="p">;</span>
+    root         /var/www/blog/public<span class="p">;</span>
+    .....
+</code></pre></div><p>可以使用<code>nginx -s reload</code>命令重启一下<code>nginx</code>，我在使用过程发现服务器的 80 端口并没有开放，由于我的域名使用的是<code>http</code>，并没有配置<code>https</code>，所以需要开放下 80 端口：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">firewall-cmd --zone<span class="o">=</span>public --add-port<span class="o">=</span>80/tcp --permanent
+</code></pre></div><blockquote>
+<p>命令含义：</p>
+<p>&ndash;zone #作用域</p>
+<p>&ndash;add-port=80/tcp  # 添加端口，格式为：端口 / 通讯协议</p>
+<p>&ndash;permanent   #永久生效，没有此参数重启后失效</p>
+</blockquote>
+<p>重启防火墙：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">systemctl restart firewalld.service
+</code></pre></div><p>实际上进行到这里，就能通过访问<a href="http://lanceharper.xyz" target="_blank" rel="noopener noreffer">lanceharper.xyz</a>查看我的博客了，但是每次更新时需要不停地连接服务器，手动<code>git clone</code>然后<code>hugo -D</code>，还是太过繁琐了。</p>
+<h2 id="服务器配置">服务器配置</h2>
+<p>可以通过配置 webhook 然后在每次 push 新文章后自动化地把文章内容部署到服务器内。</p>
+<p>我们可以在服务器内安装<code>nodejs</code>，然后使用 <a href="https://github.com/rvagg/github-webhook-handler" target="_blank" rel="noopener noreffer">github-webhook-handler</a> 插件，它的作用在于监听 github webhook 发送的请求，如果监听到了再去执行自定义的指令。</p>
+<p>我们在<code>/etc</code>下新建<code>webhook</code>文件夹，然后进入文件夹后使用<code>npm init</code>初始化该文件夹，再安装 [github-webhook-handler 插件：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install github-webhook-handler --save
+</code></pre></div><p>然后新建<code>github-webhook.js</code>，并写入如下内容：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">createHandler</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;github-webhook-handler&#39;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">exec</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;child_process&#39;</span><span class="p">).</span><span class="nx">exec</span>
+<span class="kd">var</span> <span class="nx">handler</span> <span class="o">=</span> <span class="nx">createHandler</span><span class="p">({</span> <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;/webhook&#39;</span><span class="p">,</span> <span class="nx">secret</span><span class="o">:</span> <span class="s1">&#39;mysecret&#39;</span> <span class="p">})</span>
+
+<span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">handler</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">=</span> <span class="mi">404</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">&#39;no such location&#39;</span><span class="p">)</span>
+  <span class="p">})</span>
+<span class="p">}).</span><span class="nx">listen</span><span class="p">(</span><span class="mi">7777</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;github Hook Server running at http://0.0.0.0:7777/webhook&#34;</span><span class="p">);</span>
+
+<span class="nx">handler</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">&#39;Error:&#39;</span><span class="p">,</span> <span class="nx">err</span><span class="p">.</span><span class="nx">message</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="nx">handler</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;push&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Received a push event for %s to %s&#39;</span><span class="p">,</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">payload</span><span class="p">.</span><span class="nx">repository</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">payload</span><span class="p">.</span><span class="nx">ref</span><span class="p">)</span>
+    <span class="nx">exec</span><span class="p">(</span><span class="s1">&#39;sh ./hugo-deploy.sh&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">&#39;error:\n&#39;</span> <span class="o">+</span> <span class="nx">error</span><span class="p">);</span>
+            <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;stdout:\n&#39;</span> <span class="o">+</span> <span class="nx">stdout</span><span class="p">);</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;stderr:\n&#39;</span> <span class="o">+</span> <span class="nx">stderr</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">})</span>
+</code></pre></div><p>这里监听的是 ip 地址 7777 端口下的<code>/webhook</code>，下一步我们就会用上，可以看到当监听到 webhook 发来的请求时，会执行<code>sh hugo-deploy.sh</code>，因而我们还需要新建一个<code>hugo-deploy.sh</code>，这个文件填入我们之前手动建站时的指令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /var/www/blog
+rm -rf *
+rm -rf .*
+git clone git@github.com:bearbaba/blog.git .
+git submodule init
+git submodule update
+hugo -D
+</code></pre></div><p>我们可以通过手动执行<code>sh hugo-deploy.sh</code>来验证手动写的指令是否正确，不过还应当给予执行指令的特殊权限：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">chmod +x hugo-deploy.sh
+</code></pre></div><p>然后我们需要使用<code>npm</code>安装<code>pm2</code>这是一个非常好的调试工具，</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">npm install -g pm2
+</code></pre></div><p>注意我们是全局安装了这个调试工具，然后执行以下指令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">pm2 start github-webhook.js
+pm2 startup
+</code></pre></div><p>以上指令能让<code>github-webhook.js</code>文件保持执行的状态，并且再服务器重启后也能运行。</p>
+<p>也可以通过<code>pm2 log</code>查看最近运行的信息，方便我们找出 bug 。</p>
+<p>另外还要记得开放服务器的 7777 端口，这和之前开放 80 端口是一样的。</p>
+<h2 id="github-配置-webhook">GitHub 配置 webhook</h2>
+<p>打开托管仓库 github.com/bearbaba/blog （就是我们之前在 GitHub 内新建的库），点击右上角 Settings 按钮，选择 Webhooks，</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191630730.png"
+        data-srcset="https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191630730.png, https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191630730.png 1.5x, https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191630730.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191630730.png"
+        title="image-20220219163038428" /></p>
+<p>点击右上角 Add webhook，</p>
+<ul>
+<li>
+<p>Payload URL 填服务器端创建好的 http://lanceharper:7777/webhook （就是域名）</p>
+</li>
+<li>
+<p>content type 选择 application/json</p>
+</li>
+<li>
+<p>Secret 填入 mysecret (这里对应的是 github-webhook.js 的 secret)。</p>
+</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191632629.png"
+        data-srcset="https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191632629.png, https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191632629.png 1.5x, https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191632629.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191632629.png"
+        title="image-20220219163215879" /></p>
+<p>我们可以在 GitHub 的 webhooks 内查看最近的请求响应的信息：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191616756.png"
+        data-srcset="https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191616756.png, https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191616756.png 1.5x, https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191616756.png 2x"
+        data-sizes="auto"
+        alt="https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202191616756.png"
+        title="image-20220219161637480" /></p>
+<p>以上我们就能在每次使用<code>git push</code>更新<code>blog</code>库时自动把内容部署到服务器上了。</p>
+<blockquote>
+<p>参考文章：</p>
+<p><a href="https://blog.51cto.com/u_15127610/3422660" target="_blank" rel="noopener noreffer">使用 webhook 实现博客网站自动化部署_mob604756f87695 的技术博客_51CTO 博客</a></p>
+<p><a href="https://blog.rickchen.info/posts/blog-building-tutorial/#github-webhook-%e4%bd%bf%e7%94%a8" target="_blank" rel="noopener noreffer">Hugo + GitHub Webhook 博客搭建教程 - 聪了个颖 (rickchen.info)</a></p>
+<p><a href="https://hugoloveit.com/zh-cn/theme-documentation-basics/" target="_blank" rel="noopener noreffer">主题文档 - 基本概念 - LoveIt (hugoloveit.com)</a></p>
+<p><a href="https://ojbk.im/posts/2018/hugo-deployment-webhook/" target="_blank" rel="noopener noreffer">Hugo 利用 Webhook 实现自动部署 (ojbk.im)</a></p>
+</blockquote>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-02-19</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>,&nbsp;<a href="/tags/%E5%B7%A5%E5%85%B7/">工具</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+<div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="http://lanceharper.xyz" target="_blank">Lance Harper</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/gitalk/gitalk.min.js"></script><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/twemoji/twemoji.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"gitalk":{"admin":["bearbaba"],"clientID":"3858e86bb92b33a8cece","clientSecret":"f47a0fedec73ac1c2aaaf6e45a4a9f5f19dccf54","id":"2022-02-19T13:04:44+08:00","owner":"bearbaba","repo":"blog","title":"如何快速搭建一个博客"}},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>所有文章 - 大熊今天学点啥</title>
-        <link>http://lanceharper.xyz/posts/</link>
-        <description>所有文章 | 大熊今天学点啥</description>
+        <title>工具 - 标签 - 大熊今天学点啥</title>
+        <link>http://lanceharper.xyz/tags/%E5%B7%A5%E5%85%B7/</link>
+        <description>工具 - 标签 - 大熊今天学点啥</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lanceharper2022@gmail.com (Lance Harper)</managingEditor>
-            <webMaster>lanceharper2022@gmail.com (Lance Harper)</webMaster><lastBuildDate>Sat, 19 Feb 2022 13:04:44 &#43;0800</lastBuildDate><atom:link href="http://lanceharper.xyz/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>lanceharper2022@gmail.com (Lance Harper)</webMaster><lastBuildDate>Sat, 19 Feb 2022 13:04:44 &#43;0800</lastBuildDate><atom:link href="http://lanceharper.xyz/tags/%E5%B7%A5%E5%85%B7/" rel="self" type="application/rss+xml" /><item>
     <title>如何快速搭建一个博客</title>
     <link>http://lanceharper.xyz/posts/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/</link>
     <pubDate>Sat, 19 Feb 2022 13:04:44 &#43;0800</pubDate>

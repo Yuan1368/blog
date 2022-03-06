@@ -1,7 +1,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - 标签 - 大熊今天学点啥</title>
-        <link>https://github.com/bearbaba/blog/tags/</link>
+        <link>http://lanceharper.xyz/tags/</link>
         <description>Tags - 标签 - 大熊今天学点啥</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="https://github.com/bearbaba/blog/tags/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lanceharper2022@gmail.com (Lance Harper)</managingEditor>
+            <webMaster>lanceharper2022@gmail.com (Lance Harper)</webMaster><lastBuildDate>Sat, 19 Feb 2022 13:04:44 &#43;0800</lastBuildDate><atom:link href="http://lanceharper.xyz/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>博客</title>
+    <link>http://lanceharper.xyz/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <pubDate>Sat, 19 Feb 2022 13:04:44 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://lanceharper.xyz/tags/%E5%8D%9A%E5%AE%A2/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>工具</title>
+    <link>http://lanceharper.xyz/tags/%E5%B7%A5%E5%85%B7/</link>
+    <pubDate>Sat, 19 Feb 2022 13:04:44 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://lanceharper.xyz/tags/%E5%B7%A5%E5%85%B7/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>

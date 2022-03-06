@@ -1,0 +1,8 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Series - series - 大熊今天学点啥</title>
+        <link>http://lanceharper.xyz/series/</link>
+        <description>Series - series - 大熊今天学点啥</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lanceharper2022@gmail.com (Lance Harper)</managingEditor>
+            <webMaster>lanceharper2022@gmail.com (Lance Harper)</webMaster><atom:link href="http://lanceharper.xyz/series/" rel="self" type="application/rss+xml" /></channel>
+</rss>
