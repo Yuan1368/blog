@@ -53,19 +53,19 @@ pygmentscodefencesguesssyntax = true
     name = ""
     weight = 50
     identifier = "github"
-    url = "https://github.com/bearbaba/"
+    url = "https://github.com/Yuan1368/"
 
 [params]
   # LoveIt 主题版本
   version = "0.2.X"
-  subTitle = "blog.bearbaba.info"                                       # site's subTitle  # 网站二级标题
+  subTitle = "blog.Yuan1368.info"                                       # site's subTitle  # 网站二级标题
    footerSlogan = ""                                   # site's footer slogan  # 网站页脚标语
    keywords = [" Lance Harper "," 博客 "," 技术 "]                                  # site's keywords  # 网站关键字
    description = " 大熊今天学点啥 "                        # site's description  # 网站描述
    enableMathJax = true                                                 # enable mathjax  # 是否使用 mathjax（数学公式）
   enableSummary = true                                                 # display the article summary  # 是否显示文章摘要
    mainSections = ["posts","post"]
-  gitRepo = "https://github.com/bearbaba/blog"
+  gitRepo = "https://github.com/Yuan1368/blog"
 
   # 页面底部信息配置
   [params.footer]
@@ -94,7 +94,7 @@ pygmentscodefencesguesssyntax = true
       # Gravatar 邮箱，用于优先在主页显示的头像
       # gravatarEmail = "lanceharper2022@gmail.com"
       # 主页显示头像的 URL
-      avatarURL = "https://raw.githubusercontent.com/bearbaba/imgs-repo/main/202202181657739.png"
+      avatarURL = "https://raw.githubusercontent.com/Yuan1368/imgs-repo/main/202202181657739.png"
       # LoveIt 更改 | 0.2.7 主页显示的网站标题 (支持 HTML 格式)
       title = "大熊今天学点啥"
       # 主页显示的网站副标题
@@ -115,7 +115,7 @@ pygmentscodefencesguesssyntax = true
       defaultHiddenFromHomePage = false
 
   [params.social]
-    GitHub = "bearbaba"
+    GitHub = "Yuan1368"
     RSS = true
   [params.page]
     twemoji = true
@@ -162,7 +162,7 @@ pygmentscodefencesguesssyntax = true
       [params.page.comment.gitalk]
         # LoveIt 新增 | 0.1.1
         enable = true
-        owner = "bearbaba"
+        owner = "Yuan1368"
         repo = "blog"
         clientId = "3858e86bb92b33a8cece"
         clientSecret = "f47a0fedec73ac1c2aaaf6e45a4a9f5f19dccf54"
