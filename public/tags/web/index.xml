@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Web - 标签 - 大熊今天学点啥</title>
+        <link>http://lanceharper.xyz/tags/web/</link>
+        <description>Web - 标签 - 大熊今天学点啥</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lanceharper2022@gmail.com (Lance Harper)</managingEditor>
+            <webMaster>lanceharper2022@gmail.com (Lance Harper)</webMaster><lastBuildDate>Sat, 09 Apr 2022 10:56:24 &#43;0800</lastBuildDate><atom:link href="http://lanceharper.xyz/tags/web/" rel="self" type="application/rss+xml" /><item>
+    <title>用electron做一个桌面工具程序（应该不算教程）</title>
+    <link>http://lanceharper.xyz/posts/%E7%94%A8electron%E5%81%9A%E4%B8%80%E4%B8%AA%E6%A1%8C%E9%9D%A2%E5%B7%A5%E5%85%B7%E7%A8%8B%E5%BA%8F%E5%BA%94%E8%AF%A5%E4%B8%8D%E7%AE%97%E6%95%99%E7%A8%8B/</link>
+    <pubDate>Sat, 09 Apr 2022 10:56:24 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://lanceharper.xyz/posts/%E7%94%A8electron%E5%81%9A%E4%B8%80%E4%B8%AA%E6%A1%8C%E9%9D%A2%E5%B7%A5%E5%85%B7%E7%A8%8B%E5%BA%8F%E5%BA%94%E8%AF%A5%E4%B8%8D%E7%AE%97%E6%95%99%E7%A8%8B/</guid>
+    <description><![CDATA[本着有鱼能摸，不摸白不摸的原则，简单学了下 electron 做了一个密码加密生成器，主要作用实际上是用来给我自己的设置的密码再进行加密一下。我一直以来给不同]]></description>
+</item></channel>
+</rss>

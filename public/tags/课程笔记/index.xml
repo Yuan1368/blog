@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>课程笔记 - 标签 - 大熊今天学点啥</title>
+        <link>http://lanceharper.xyz/tags/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</link>
+        <description>课程笔记 - 标签 - 大熊今天学点啥</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>lanceharper2022@gmail.com (Lance Harper)</managingEditor>
+            <webMaster>lanceharper2022@gmail.com (Lance Harper)</webMaster><lastBuildDate>Tue, 05 Apr 2022 16:23:48 &#43;0800</lastBuildDate><atom:link href="http://lanceharper.xyz/tags/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>计算机教育中缺失的课程第一课笔记</title>
+    <link>http://lanceharper.xyz/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%99%E8%82%B2%E4%B8%AD%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E8%AF%BE%E7%AC%94%E8%AE%B0/</link>
+    <pubDate>Tue, 05 Apr 2022 16:23:48 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://lanceharper.xyz/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%99%E8%82%B2%E4%B8%AD%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E8%AF%BE%E7%AC%94%E8%AE%B0/</guid>
+    <description><![CDATA[这是一个笔记，用来记录 MIT 开放的 The Missing Semester of Your CS Education 课程的笔记 The Missing Semester of Your CS Education 意为“计算机教育中缺失的一课”，讲授命令行、强大的文本编辑器的使用、使用]]></description>
+</item></channel>
+</rss>

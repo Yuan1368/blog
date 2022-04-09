@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>什么是 CSS 媒体查询 - 大熊今天学点啥</title><meta name="Description" content=" 大熊今天学点啥 "><meta property="og:title" content="什么是 CSS 媒体查询" />
+<meta property="og:description" content="什么是 CSS 媒体查询 最近在看 《 CSS 权威指南 （第四版）》这本书，书里的前几章介绍了 CSS 的媒体查询,这里通过几个例子学习记录下。 媒体查询的简单使用 媒体查" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://lanceharper.xyz/posts/%E4%BB%80%E4%B9%88%E6%98%AF-css-%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-06T17:09:56+08:00" />
+<meta property="article:modified_time" content="2022-03-06T17:09:56+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="什么是 CSS 媒体查询"/>
+<meta name="twitter:description" content="什么是 CSS 媒体查询 最近在看 《 CSS 权威指南 （第四版）》这本书，书里的前几章介绍了 CSS 的媒体查询,这里通过几个例子学习记录下。 媒体查询的简单使用 媒体查"/>
+<meta name="application-name" content="大熊今天学点啥">
+<meta name="apple-mobile-web-app-title" content="大熊今天学点啥"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://lanceharper.xyz/posts/%E4%BB%80%E4%B9%88%E6%98%AF-css-%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/" /><link rel="prev" href="http://lanceharper.xyz/posts/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" /><link rel="next" href="http://lanceharper.xyz/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%99%E8%82%B2%E4%B8%AD%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E8%AF%BE%E7%AC%94%E8%AE%B0/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "什么是 CSS 媒体查询",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/lanceharper.xyz\/posts\/%E4%BB%80%E4%B9%88%E6%98%AF-css-%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2\/"
+        },"genre": "posts","keywords": "前端, CSS","wordcount":  1288 ,
+        "url": "http:\/\/lanceharper.xyz\/posts\/%E4%BB%80%E4%B9%88%E6%98%AF-css-%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2\/","datePublished": "2022-03-06T17:09:56+08:00","dateModified": "2022-03-06T17:09:56+08:00","publisher": {
+            "@type": "Organization",
+            "name": "Lance Harper"},"author": {
+                "@type": "Person",
+                "name": "Lance Harper"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="大熊今天学点啥">大熊今天学点啥</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="https://github.com/Yuan1368/" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="大熊今天学点啥">大熊今天学点啥</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="https://github.com/Yuan1368/" title="" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">什么是 CSS 媒体查询</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="http://lanceharper.xyz" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Lance Harper</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/css/"><i class="far fa-folder fa-fw"></i>CSS</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-06">2022-03-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1288 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#媒体查询的简单使用">媒体查询的简单使用</a></li>
+    <li><a href="#媒体类型">媒体类型</a></li>
+    <li><a href="#媒体特性">媒体特性</a></li>
+    <li><a href="#逻辑连接符">逻辑连接符</a></li>
+    <li><a href="#除此之外呢">除此之外呢？</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="什么是-css-媒体查询">什么是 CSS 媒体查询</h1>
+<blockquote>
+<p>最近在看 《 CSS 权威指南 （第四版）》这本书，书里的前几章介绍了 CSS 的<code>媒体查询</code>,这里通过几个例子学习记录下。</p>
+</blockquote>
+<h2 id="媒体查询的简单使用">媒体查询的简单使用</h2>
+<p>媒体查询主要通过<code>@media</code>声明的媒体描述符部分完成，首先看下如下这段代码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">div.ppt {
+  width : 100px;
+  height: 100px;
+}
+
+@media projection {
+  div.ppt {
+    background: blue;
+  }
+}
+
+@media all {
+  div.ppt {
+    background: red;
+  }
+}
+</code></pre></div><p>这段代码从表面上看与正常的代码区别并不大，无非是定义了一个<code>class</code>为<code>.ppt</code>的<code>div</code>元素宽高均为<code>100px</code>，但是这段代码由于引入了<code>@media</code>，事实上在不同的情景下是会出现不同的背景色，<code>@media projection</code>查询的媒体是投影仪的情况下，<code>.ppt</code>元素背景色为<code>blue</code>，<code>all</code>的情景则使用于所有设备。</p>
+<h2 id="媒体类型">媒体类型</h2>
+<p>常用的媒体类型有：</p>
+<p>all 适用于所有设备。</p>
+<p>print 适用于在打印预览模式下在屏幕上查看的分页材料和文档。 （有关特定于这些格式的格式问题的信息，请参阅分页媒体。）</p>
+<p>screen 主要用于屏幕。</p>
+<p>speech 主要用于语音合成器。</p>
+<p>除此之外还有一些废弃的媒体类型：</p>
+<blockquote>
+<p>被废弃的媒体类型： CSS2.1 和  Media Queries 3 定义了一些额外的媒体类型 (tty, tv, projection, handheld, braille, embossed, 以及 aural)，但是他们在 Media Queries 4 中已经被废弃，并且不应该被使用。aural 类型被替换为具有相似效果的 speech。</p>
+</blockquote>
+<h2 id="媒体特性">媒体特性</h2>
+<p>如果我们需要希望某个元素在不同的屏幕大小的设备里有不同的表现，我们就可以使用媒体特性为这个元素设置不同的样式。</p>
+<p>例如，我们希望元素背景色在移动端显示为红色，在 PC 端显示为绿色，我们就可以这样设置：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">div.element {
+  width : 100px;
+  height: 100px;
+}
+
+@media screen and (max-device-width: 480px) {
+  .element {
+    background: red;
+  }
+}
+
+
+@media screen and (min-device-width: 480px) {
+  .element {
+    background: green;
+  }
+}
+</code></pre></div><p>以上代码查询的一个是最大设备宽度为480px，另一个是最小设备宽度为480px，由于 PC 端的宽度大于480px，因而<code>element</code>元素显示为绿色。</p>
+<p>这里的使用场景通常是为不同大小的设备定义元素不同的样式，比如说某个元素的背景图我们希望它在手机端和 PC 端有不同的大小以尽量去实现它对不同设备的自适应。</p>
+<p>除了上述<code>max-device-width</code>媒体特性外，我们可以在 MDN (<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Media_Queries/Using_media_queries#%e5%ae%9a%e4%bd%8d%e5%aa%92%e4%bd%93%e7%b1%bb%e5%9e%8b" target="_blank" rel="noopener noreffer">使用媒体查询 - CSS（层叠样式表） | MDN (mozilla.org)</a>) 上查找到其它的一些媒体特性。</p>
+<p>另外我们可以通过这个网站查找到当前浏览器所支持的媒体特性：</p>
+<p><a href="https://www.rethinkjs.com/toolbox/css3-media-queries" target="_blank" rel="noopener noreffer">css3 媒体查询检测 (rethinkjs.com)</a></p>
+<h2 id="逻辑连接符">逻辑连接符</h2>
+<p>在上述案例中我们使用了<code>and</code>连接符，如果用户希望查询多项内容时就可以使用<code>and</code>逻辑连接符，除了<code>and</code>连接符，还有<code>not</code>连接符，例如用户希望在不支持栅格布局的元素中设置元素样式：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">@supports not (grid){
+    .element{
+        .....
+    }
+}
+</code></pre></div><p>另外还有<code>or</code>逻辑连接符也可以使用，使用这个连接符只要浏览器中支持我们设置的某个特性或 CSS 我们就可以设置某元素样式。</p>
+<h2 id="除此之外呢">除此之外呢？</h2>
+<p>除了媒体查询外，需要注意的是 CSS 一些属性在不同内核的浏览器内是无法属性，这些浏览器内最臭名昭著的当属 IE 浏览器，如果我们希望在支持与不支持这些属性时能有不同的表现形式，我们就可以使用特性查询符<code>@supports</code>。</p>
+<p><code>@supports</code>的简单使用方法如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">@supports(display: flex){
+  .element{
+    width: 100px;
+    height: 100px;
+    background: red;
+  }
+}
+</code></pre></div><p>在支持<code>display: flex</code>的浏览器内，页面能够正常显示<code>.element</code>元素的样式，但是如果不支持的话，页面也不会显示出<code>.element</code>的样式。</p>
+<p>我们通常使用<a href="https://caniuse.com/" target="_blank" rel="noopener noreffer">Can I use&hellip; Support tables for HTML5, CSS3, etc</a>这个网站去查找不同浏览器内容是否支持某一 CSS 属性，甚至 JS 的属性。</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-03-06</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>,&nbsp;<a href="/tags/css/">CSS</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" class="prev" rel="prev" title="如何快速搭建一个博客"><i class="fas fa-angle-left fa-fw"></i>如何快速搭建一个博客</a>
+            <a href="/posts/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%95%99%E8%82%B2%E4%B8%AD%E7%BC%BA%E5%A4%B1%E7%9A%84%E8%AF%BE%E7%A8%8B%E7%AC%AC%E4%B8%80%E8%AF%BE%E7%AC%94%E8%AE%B0/" class="next" rel="next" title="计算机教育中缺失的课程第一课笔记">计算机教育中缺失的课程第一课笔记<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="gitalk" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://github.com/gitalk/gitalk"></a>Gitalk</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="http://lanceharper.xyz" target="_blank">Lance Harper</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/gitalk/gitalk.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/gitalk/gitalk.min.js"></script><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/twemoji/twemoji.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"gitalk":{"admin":["Yuan1368"],"clientID":"3858e86bb92b33a8cece","clientSecret":"f47a0fedec73ac1c2aaaf6e45a4a9f5f19dccf54","id":"2022-03-06T17:09:56+08:00","owner":"Yuan1368","repo":"blog","title":"什么是 CSS 媒体查询"}},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
